@@ -1,8 +1,10 @@
 # travisprobe
 
-generated using Luminus version "2.9.11.30"
+[![Build Status](https://travis-ci.org/axeclbr/travisprobe.svg?branch=master)](https://travis-ci.org/axeclbr/travisprobe)
 
-FIXME
+This is just a small project to learn how to use travis-ci.
+
+generated using Luminus version "2.9.11.30"
 
 ## Prerequisites
 
