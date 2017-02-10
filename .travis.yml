@@ -15,7 +15,7 @@ services:
 before_install:
   - lein uberjar
   - docker build -t axeclbr/travisprobe .
-  - docker run -d -p 127.0.0.1:3000 --name app axeclbr/travisprobe
+  - docker run -d -p 127.0.0.1:80:3000 --name app axeclbr/travisprobe
   - sleep 10
 
 script:
