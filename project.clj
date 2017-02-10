@@ -40,7 +40,8 @@
 
   :plugins [[lein-cprop "1.0.1"]
             [lein-cljsbuild "1.1.4"]
-            [lein-immutant "2.1.0"]]
+            [lein-immutant "2.1.0"]
+            [lein-cloverage "1.0.9"]]
   :clean-targets ^{:protect false}
   [:target-path [:cljsbuild :builds :app :compiler :output-dir] [:cljsbuild :builds :app :compiler :output-to]]
   :figwheel
@@ -48,7 +49,7 @@
    :nrepl-port 7002
    :css-dirs ["resources/public/css"]
    :nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]}
-  
+
 
   :profiles
   {:uberjar {:omit-source true
@@ -64,8 +65,8 @@
                  :closure-warnings
                  {:externs-validation :off :non-standard-jsdoc :off}
                  :externs ["react/externs/react.js"]}}}}
-             
-             
+
+
              :aot :all
              :uberjar-name "travisprobe.jar"
              :source-paths ["env/prod/clj"]
@@ -98,9 +99,9 @@
                       :source-map true
                       :optimizations :none
                       :pretty-print true}}}}
-                  
-                  
-                  
+
+
+
                   :doo {:build "test"}
                   :source-paths ["env/dev/clj" "test/clj"]
                   :resource-paths ["env/dev/resources"]
@@ -117,7 +118,7 @@
                       :main "travisprobe.doo-runner"
                       :optimizations :whitespace
                       :pretty-print true}}}}
-                  
+
                   }
    :profiles/dev {}
    :profiles/test {}})

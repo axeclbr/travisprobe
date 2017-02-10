@@ -1,6 +1,7 @@
 # travisprobe
 
 [![Build Status](https://travis-ci.org/axeclbr/travisprobe.svg?branch=master)](https://travis-ci.org/axeclbr/travisprobe)
+[![codecov](https://codecov.io/gh/axeclbr/travisprobe/branch/master/graph/badge.svg)](https://codecov.io/gh/axeclbr/travisprobe)
 
 This is just a small project to learn how to use travis-ci.
 
